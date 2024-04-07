@@ -1,0 +1,457 @@
+{
+        "intents": [
+                {
+                        "tag": "goodbye",
+                        "patterns": [
+                                "cya",
+                                "see you",
+                                "bye bye",
+                                "See you later",
+                                "Goodbye",
+                                "I am Leaving",
+                                "Bye",
+                                "bye",
+                                "Have a Good day",
+                                "talk to you later",
+                                "ttyl",
+                                "i got to go",
+                                "gtg",
+                                "welcome"
+                        ],
+                        "responses": [
+                                "Goodbye!",
+                                "Come back soon",
+                                "Thanks for visiting"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi",
+                                "hi",
+                                "hello",
+                                "Hello",
+                                "How are you",
+                                "Hello",
+                                "Good day",
+                                "Whats up",
+                                "how are ya",
+                                "how are you",
+                                "heyy",
+                                "hey",
+                                "whatsup",
+                                "Nex bot"
+                        ],
+                        "responses": [
+                                "Hello!",
+                                "Good to see you again!",
+                                "Hi there, how can I help?",
+                                "Hi, I'm Nex chatbot. How can I help you?",
+                                "Welcome to Nex chatbot"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "NexTurn Moto",
+                        "patterns": [
+                                "moto of nexturn",
+                                "moto",
+                                "tag line",
+                                "tagline",
+                                "slogan"
+                        ],
+                        "responses": [
+                                "Engineer your NexTurn on Cloud"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "NexTurn about",
+                        "patterns": [
+                                "about of nexturn",
+                                "about",
+                                "about nexturn"
+                        ],
+                        "responses": [
+                                "We enable clients to navigate the paradigm shift in building and modernizing software products & platforms leveraging cloud native solutions. Partner with us to accelerate your innovation & digital transformation journey by unlocking full value of cloud"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "what NexTurn do",
+                        "patterns": [
+                                "what nexturn do",
+                                "what they do",
+                                "what company do",
+                                "how nexturn work with clients"
+                        ],
+                        "responses": [
+                                "We work with clients in engineering their Products and Platforms that generate new value and deliver enhanced experience. Our services are aligned with your digital transformation lifecycle from ideation to continuous experimentation to continuous engineering and are focused on delivering continuous value creation"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "teams in nexturn",
+                        "patterns": [
+                                "what are the teams in nexturn",
+                                "teams",
+                                "what are teams",
+                                "what are the services in nexturn",
+                                "services",
+                                "what are services"
+                        ],
+                        "responses": [
+                                "Enterprise Transformation to Cloud \nCloud Native Engineering \nCloud Data & Analytics \nRight Cloud & Security"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Enterprise Transformation to Cloude",
+                        "patterns": [
+                                "what is Enterprise Transformation to Cloude",
+                                "what is ETC",
+                                "ETC",
+                                "Enterprise Transformation to Cloude"
+                        ],
+                        "responses": [
+                                "As a partner of choice, NexTurn will empower you to make your Enterprise Transformation to Cloud decisions"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Cloud Native Engineering",
+                        "patterns": [
+                                "what is Cloud Native Engineering",
+                                "what is CNE",
+                                "CNE",
+                                "Cloud Native Engineering"
+                        ],
+                        "responses": [
+                                "As a partner of choice, NexTurn will help enhance customer experiences by accelerating your cloud initiatives"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Current Trends",
+                        "patterns": [
+                                "current trend",
+                                "recent news",
+                                "exciting news",
+                                "latest trend in nexturn",
+                                "annual event images",
+                                "annual event"
+                        ],
+                        "responses": [
+                                "<img src='/static/images/1.jpeg' height='220px' width='300px' style='border-radius: 5px;'/><br/><br/><p>We are thrilled to announce the success of our 2nd Annual Day, where we had the privilege of gathering with over 250 NexTurn partners!</p>",
+                                "<img src='/static/images/2.jpeg' height='220px' width='300px' style='border-radius: 5px;'/><br/><br/><p>We are thrilled to announce the success of our 2nd Annual Day, where we had the privilege of gathering with over 250 NexTurn partners!</p>",
+                                "<img src='/static/images/3.jpeg' height='220px' width='300px style='border-radius: 5px;'/><br/><br/><p>We are thrilled to announce the success of our 2nd Annual Day, where we had the privilege of gathering with over 250 NexTurn partners!</p>"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Cloud Data & Analytics",
+                        "patterns": [
+                                "what is Cloud Data & Analytics",
+                                "what is CDA",
+                                "Cloud Data",
+                                "Cloud Analytics",
+                                "CDA",
+                                "Cloud Data & Analytics"
+                        ],
+                        "responses": [
+                                "NexTurn firmly believes that Data when harnessed correctly, has the potential to drive decision-making."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Right Cloud & Security",
+                        "patterns": [
+                                "what is Right Cloud & Security",
+                                "what is RCS",
+                                "RCS",
+                                "Right Cloud & Security"
+                        ],
+                        "responses": [
+                                "NexTurn helps you operate your cloud infrastructure more efficiently and securely"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Get In Touch",
+                        "patterns": [
+                                "how to get in touch with nexturn",
+                                "get in touch",
+                                "how to get in touch",
+                                "how to contact",
+                                "how to contact nexturn",
+                                "mails to contact",
+                                "contact details",
+                                "contact details of nexturn",
+                                "Contact us",
+                                "contact",
+                                "mail"
+                        ],
+                        "responses": [
+                                "For Careers Oppurtunity - <a href='mailto:careers@nexturn.com'>careers@nexturn.com</a>",
+                                "For More Information - <a href='mailto:info@nexturn.com'>info@nexturn.com</a>"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "know more about Enterprise Transformation To Cloud",
+                        "patterns": [
+                                "know more about Enterprise Transformation To Cloud",
+                                "more about Enterprise Transformation To Cloud",
+                                "more about ETC",
+                                "know more about ETC",
+                                "more details of Enterprise Transformation To Cloud",
+                                "more details of ETC"
+                        ],
+                        "responses": [
+                                "As a partner of choice, NexTurn will empower you to make your Enterprise Transformation to Cloud decisions align with your business objectives, Discover to Evaluate Business Processes and IT landscape, Strategize with Roadmap to Cloud to maximize ROI and optimize Capex/Opex, Partner to ensure successful GO LIVE with COTS/homegrown Systems on the Cloud"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "know more about Cloud Native Engineering",
+                        "patterns": [
+                                "know more about Cloud Native Engineering",
+                                "more about Cloud Native Engineering",
+                                "more about CNE",
+                                "know more about CNE",
+                                "more details of Cloud Native Engineering",
+                                "more details of CNE"
+                        ],
+                        "responses": [
+                                "As a partner of choice, NexTurn will help enhance customer experiences by accelerating your cloud initiatives through our engineering capabilities. Accelerate digital transformations with cloud native engineering, Enhance customer experiences and speed to market with cloud native approach, Become future-ready by modernizing legacy application landscape and building next generation applications"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "know more about Cloud Data & Analytics",
+                        "patterns": [
+                                "know more about Cloud Data & Analytics",
+                                "more about Cloud Data & Analytics",
+                                "more about CDA",
+                                "know more about CDA",
+                                "more details of Cloud Data & Analytics",
+                                "more details of CDA"
+                        ],
+                        "responses": [
+                                "NexTurn maximizes data's potential for decision-making, strategy impact, and organizational performance. Trust our data experts for tailored solutions and confident cloud transitions."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "know more about Right cloud Security",
+                        "patterns": [
+                                "know more about Right cloud Security",
+                                "more about Right cloud Security",
+                                "more about RCS",
+                                "know more about RCS",
+                                "more details of Right cloud Security",
+                                "more details of RCS"
+                        ],
+                        "responses": [
+                                "NexTurn optimizes cloud operations, ensuring compliance and security. We enable businesses to leverage cost reduction, streamlined delivery, optimal performance, and reliability."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "careers",
+                        "patterns": [
+                                "careers in nexturn",
+                                "careers",
+                                "careers in nexturn",
+                                "job openings",
+                                "jobs",
+                                "jobs in nexturn",
+                                "openings",
+                                "openings in nexturn",
+                                "vacancies",
+                                "vacancies in nexturn"
+                        ],
+                        "responses": [
+                                "35+ Openings are Currently!!<br/><a href='https://nexturn.com/careers/' target='_blank'>Click Here</a>"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "careers",
+                        "patterns": [
+                                "total careers in nexturn",
+                                "total careers",
+                                "number of careers in nexturn",
+                                "number of job openings",
+                                "no of job openings",
+                                "no of jobs",
+                                "number of jobs in nexturn",
+                                "total openings",
+                                "number of openings in nexturn",
+                                "no of vacancies",
+                                "number of vacancies in nexturn"
+                        ],
+                        "responses": [
+                                "35+ Openings are Currently!!<br/><a href='https://nexturn.com/careers/' target='_blank'>Click Here</a>"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "no of departments",
+                        "patterns": [
+                                "total departments in nexturn",
+                                "total departments",
+                                "number of departments in nexturn",
+                                "number of departments",
+                                "no of departments",
+                                "no of departments",
+                                "number of departments in nexturn",
+                                "total departments",
+                                "number of departments in nexturn",
+                                "no of departments",
+                                "number of departments in nexturn",
+                                "total domains in NexTurn",
+                                "total domains",
+                                "number of domains in NexTurn",
+                                "number of domains",
+                                "no of domains",
+                                "no of domains",
+                                "number of domains in NexTurn",
+                                "total domains",
+                                "number of domains in NexTurn",
+                                "no of domains",
+                                "number of domains in NexTurn"
+                        ],
+                        "responses": [
+                                "8 Departments/Domains"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "department details",
+                        "patterns": [
+                                "total people in all departments in nexturn",
+                                "total people in all departments",
+                                "number of people all departments in nexturn",
+                                "number of poeple in all departments",
+                                "no of people in alldepartments",
+                                "no of people each departments",
+                                "number of people in each departments in nexturn",
+                                "total people in departments",
+                                "number of people in all departments in nexturn",
+                                "count of employees in each departments",
+                                "number of people departments in nexturn",
+                                "strength in each deparrment",
+                                "how many employees",
+                                "what about staffs",
+                                "staffs",
+                                "staffs in nexturn",
+                                "employees in nexturn"
+                        ],
+                        "responses": [
+                                "Corporate - 1<br/>RCS - 55<br/>Finance - 2<br/>HR - 10<br/>ETC - 7<br/>CDA - 40<br/>CNE - 139<br/>Business Support - 1"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "why nexturn",
+                        "patterns": [
+                                "why one should choose nexturn",
+                                "why nexturn",
+                                "why to choose nexturn",
+                                "why a employee choose you",
+                                "why a employee come to nexturn",
+                                "why is nexturn"
+                        ],
+                        "responses": [
+                                "1.Remote first</br>2.Competency based organization</br>3.Learning experiences"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Testimonials",
+                        "patterns": [
+                                "testimonial",
+                                "testimonials",
+                                "reviews",
+                                "review",
+                                "internal review"
+                        ],
+                        "responses": [
+                                "JUNAIZ : I always wanted to explore new possibilities in my career and always keen to partner with such companies. NexTurn looks promising and is a new-age company, be it their remote working model, friendly management team & employees. Looking forward to grow with the company.",
+                                "KAUSHIK : NexTurn had me at the interview itself. It was not like an interview rather a very informal discussion. They were open to hearing my ideas. The fact that NexTurn was going strong on digital transformation was even more attractive. ",
+                                "DINESH : The strong leadership team in NexTurn has inspired me to join. One thing that impressed the most is the trust in their Partners, here everyone is treated as a Partner, not an employee."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "what we building",
+                        "patterns": [
+                                "what they building",
+                                "what nexturn bulind",
+                                "what is bulding",
+                                "what nexturn building"
+                        ],
+                        "responses": [
+                                "We are building an enterprise model to accelerate continuous value creation for clients and a happy place for current generation of high performing engineers."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "how we engineer",
+                        "patterns": [
+                                "how they engineer",
+                                "how we engineer",
+                                "how nexturn engineer",
+                                "how engineer"
+                        ],
+                        "responses": [
+                                "Our unique approach is a combination of many firsts.</br>NexTurn is the next generation consulting model focused on accelerating continuous value creation for clients and partners. We reimagined the foundation blocks of an enterprise and designed a unique approach that is a combination of many firsts."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "founders",
+                        "patterns": [
+                                "who are the founders of nexturn",
+                                "who are the founder of nexturn",
+                                "founders",
+                                "founders of nexturn"
+                        ],
+                        "responses": [
+                                "Bhaskar</br>Naren</br>Deva"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "founding Partner",
+                        "patterns": [
+                                "who are the founding Partner of nexturn",
+                                "who are the founding Partner of nexturn",
+                                "founding Partner",
+                                "founding Partner of nexturn"
+                        ],
+                        "responses": [
+                                "Sarvanan</br>Siva</br>Baba</br>Gunjan</br>Harsha"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "profile",
+                        "patterns": [
+                                "socialmedia",
+                                "linkedin profile",
+                                "linked",
+                                "linkedin url",
+                                "LinkedIn Profile of NexTurn",
+                                "Click Here for LinkedIn Profile of NexTurn",
+                                "Visit NexTurn's LinkedIn Profile"
+                        ],
+                        "responses": [
+                                "Click Here for <a href='https://www.linkedin.com/company/nexturn-inc/mycompany/' target='_blank'>LinkedIn Profile of NexTurn</a>"
+                        ],
+                        "context_set": ""
+                }
+        ]
+}

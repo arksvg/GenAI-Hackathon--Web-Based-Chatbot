@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #4621A8;
+            color: white;
+            padding: 10px;
+            font-family:  Arial, sans-serif;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-wrap: nowrap;
+        }
+
+        .navbar-links {
+            display: flex;
+            text-wrap: nowrap;
+            font-weight: bold;
+        }
+
+        .navbar-link {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+
+        .navbar-link:hover {
+            background-color: #351984;
+            color: white;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 25px;
+            /* Add margin between form groups */
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            /* Add margin between label and input */
+        }
+
+        .form-group input {
+            width: 50%;
+            /* Adjust the width as needed */
+            padding: 10px;
+            /* Adjust the padding as needed */
+            box-sizing: border-box;
+
+            border-radius: 10px;
+        }
+
+        button {
+            /* Use button styles to match the anchor tag */
+            width: 45%;
+            /* Match the width of the input boxes */
+            text-decoration: none;
+            background-color: #4621A8;
+            color: aliceblue;
+            padding: 10px;
+            display: inline-block;
+            /* Make it inline block to match button behavior */
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 20px;
+            text-align: center;
+            margin-bottom: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        a {
+            /* Use anchor tag styles */
+            width: 30.5%;
+            /* Match the width of the input boxes */
+            text-decoration: none;
+            background-color: #4621A8;
+            color: aliceblue;
+            padding: 10px;
+            display: inline-block;
+            /* Make it inline block to match button behavior */
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 520px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        form {
+            margin-left: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>NexTurn</h1>
+        <div class="navbar-links">
+            <a onclick="webScrape()" class="navbar-link">Web Scrap</a>
+            <a onclick="logout()" class="navbar-link">Logout</a>
+        </div>
+    </div>
+    <h1 class="header">Admin Page</h1>
+    <div class="main-div">
+        <form action="{{ url_for('success') }}" method="POST">
+            <div class="form-group">
+                <label for="tag">Tag Name</label>
+                <input type="text" id="tag" name="tag" required placeholder="Enter the Tags" />
+            </div>
+            <div class="form-group">
+                <label for="queries">Queries</label>
+                <input type="text" id="quries" name="pattern" required placeholder="Enter the queries" />
+            </div>
+            <div class="form-group">
+                <label for="response">Response</label>
+                <input type="text" id="quries" name="res" required placeholder="Enter the response" />
+            </div>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <div class="buttons" id="submitBtn">
+            <!-- Removed anchor tag and associated script -->
+            <a href="{{ url_for('files') }}">Upload Excel Sheet</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", (event) => {
+            alert("Data Saved Successfully");
+
+            console.log("Data Saved Successfully");
+        });
+
+        function webScrape() {
+            // Redirect to the /admin page in the same tab
+            window.location.href = '/web-scrape';
+        }
+
+        console.log("Logout function called");
+        function logout(){
+        // Display SweetAlert confirmation
+        Swal.fire({
+            title: 'Are you sure you want to logout?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, logout!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                console.log("User confirmed logout");
+                
+                // If user clicks 'Yes', redirect to the home page
+                window.location.href = 'http://127.0.0.1:5000/';
+            } else {
+                console.log("User canceled logout");
+            }
+        });
+        }
+
+    </script>
+</body>
+
+</html>

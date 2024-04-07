@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+<link rel="stylesheet" href="style.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Infobot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .chat-logo {
+      fill: #0d6efd;
+    }
+  </style>
+</head>
+
+<body style="height: 80vh;">
+   
+  <div class="container-xxl p-0">
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-0">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="index.php">
+          <img src="{{ url_for('static', filename='images/logo.png') }}" alt="LOGO" width="120px"
+            class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mx-lg-auto mb-2 mb-lg-0">
+      
+
+
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">PPT</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="{{ url_for('static', filename='docs/index.html') }}">Gallery</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <div style="height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;background-image: url({{ url_for('static', filename='images/hero.jpg')}});"
+    class="container-xxl hero p-0 mb-3">
+    <div style="
+          height: 35vh;
+          background: black;
+          opacity: 0.5;
+          position: absolute;
+        " class="container-xxl color-overlay"></div>
+    <div style="color: white;
+      font-weight: bold;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      padding: 10px 5px;
+      text-align: center;
+      font-size: 1.7rem;" class="bg-text">
+      <h1 class="bg-heading">Saranathan College of Engineering</h1>
+      <p>Knowledge is Power, Strengthen it at SCE</p>
+    </div>
+  </div> 
+
+  <!-- Team -->
+  <div class="container-xl">
+    <div class="row justify-content-start align-items-center">
+      <div class="col-sm-6 col-md-4">
+        <div class="card main-team border-1 shadow-lg rounded-3 my-2 my-md-0">
+          <div class="card-body">
+            <h5 class="card-title">Project Name: InfoBot&nbsp;</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+               Team Mentor: Mrs.J.Sangeethapriya &nbsp;
+            </h6>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Team Leader: Abishek A S&nbsp;
+            </h6>
+            <h6 class="card-subtitle mb-1 text-muted">Team Members:&nbsp;</h6>
+            <ul class="list-group">
+              <li class="list-group-item border-0 text-muted ms-3 py-1">
+                Harshavarthan S R
+              </li>
+              <li class="list-group-item border-0 text-muted ms-3 py-1">
+                Ratnakumar A
+              </li>
+              <li class="list-group-item border-0 text-muted ms-3 py-1">
+                Seeni Arivazhakan
+              </li>
+            </ul>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-xl-4">
+        <div class="card main-team border-1 shadow-lg rounded-3 py-0 py-xl-2 my-2 my-md-0">
+          <div class="card-body">
+            <h5 class="card-title">Project Category : Web Based Chatbot&nbsp;</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Category : Software&nbsp;</h6>
+            <h6 class="card-subtitle mb-3 text-muted">
+              Domain Bucket : Smart Automation
+            </h6>
+            <p class="card-text">
+              We have build a Chatbot within webpage to provide general
+              services and common question asked by the pepole.Thank You 😊
+            </p>
+            <a href="#" class="btn btn-primary w-50 d-inline-block mx-auto">Reach us</a>
+          </div>
+        </div>
+      </div> 
+       <!-- <div class="col-sm-6 col-md-4">
+            <div class="wrapper">
+              <div class="title">InfoTech Chatbot</div>
+              <div class="form">
+                <div class="bot-inbox inbox">
+                  <div class="icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="msg-header w-70">
+                    <p>Hello there, how can I help you?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="typing-field">
+                <div class="input-data">
+                  <input id="data" type="text" placeholder="Type something here.." required />
+                  <button id="send-btn">Send</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="chatbox">
+      <div class="chatbox__support">
+        <div class="chatbox__header">
+          <div class="chatbox__image--header">
+            <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-5--v1.png" alt="image" />
+          </div>
+          <div class="chatbox__content--header">
+            <h4 class="chatbox__heading--header">InfoBot</h4>
+            <p class="chatbox__description--header" style="
+            margin-right: 20px;
+        ">Chat Support</p>
+            <div id="google_translate_element"></div>
+          </div>
+        </div>
+        <div class="chatbox__messages">
+          <div></div>
+        </div>
+        <div class="chatbox__footer">
+          <input id="chat-textbox" type="text" placeholder="Write a message..." />
+          <button id="chat-send-button" class="chatbox__send--footer send__button">Send</button>
+          <button data-voice="0" class="chatbox__send--footer send__button" id="voice-btn">Voice</button>
+        </div>
+      </div>
+      <div class="chatbox__button">
+        <button id="chatbox-button">
+          <img src="{{ url_for('static', filename='images/chatlogo.png') }}" class="chat-logo" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+    <!--  id="hide-speech" -->
+    <div class="app" style="visibility: hidden; height: 0;">
+      <div class="input-single">
+        <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition."
+          rows="6"></textarea>
+      </div>
+      <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+    </div>
+
+  </div>
+
+
+
+  <!-- <div style="visibility: hidden;"> -->
+  <div style="visibility: hidden;">
+    Select Voice: <select id='voiceList'></select>
+    <br><br>
+
+    <input id='txtInput' /> <br><br>
+    <button id='btnSpeak'>Speak!</button>
+
+  </div>
+
+
+
+  <script>
+    var txtInput = document.querySelector('#txtInput');
+    var voiceList = document.querySelector('#voiceList');
+    var btnSpeak = document.querySelector('#btnSpeak');
+    var synth = window.speechSynthesis;
+    var voices = [];
+
+    PopulateVoices();
+    if (speechSynthesis !== undefined) {
+      speechSynthesis.onvoiceschanged = PopulateVoices;
+    }
+
+    btnSpeak.addEventListener('click', () => {
+      var toSpeak = new SpeechSynthesisUtterance(txtInput.value);
+      console.log(txtInput.value);
+      voiceBtn.style.background = "#0d6efd"
+      var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+      voices.forEach((voice) => {
+        if (voice.name === selectedVoiceName) {
+          toSpeak.voice = voice;
+        }
+      });
+      synth.speak(toSpeak);
+    });
+
+    function PopulateVoices() {
+      voices = synth.getVoices();
+      var selectedIndex = voiceList.selectedIndex = 5;
+      voiceList.innerHTML = '';
+      voices.forEach((voice) => {
+        var listItem = document.createElement('option');
+        listItem.textContent = voice.name;
+        listItem.setAttribute('data-lang', voice.lang);
+        listItem.setAttribute('data-name', voice.name);
+        voiceList.appendChild(listItem);
+      });
+
+      voiceList.selectedIndex = selectedIndex;
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+
+    const voiceBtn = document.querySelector('#voice-btn');
+    console.log(voiceBtn);
+    const hideBox = document.querySelector('#start-record-btn');
+
+    voiceBtn.addEventListener('click', () => {
+      voiceBtn.dataset.voice = 1;
+      console.log(voiceBtn.dataset);
+      voiceBtn.style.background = 'blue'
+      hideBox.click();
+    })
+
+    try {
+      var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      var recognition = new SpeechRecognition();
+    }
+    catch (e) {
+      console.error(e);
+      $('.no-browser-support').show();
+      $('.app').hide();
+    }
+
+
+    var noteTextarea = $('#note-textarea');
+    // console.log(noteTextarea);
+    var instructions = $('#recording-instructions');
+    var notesList = $('ul#notes');
+
+    var noteContent = '';
+
+    // Get all notes from previous sessions and display them.
+    var notes = getAllNotes();
+    renderNotes(notes);
+
+
+
+    /*-----------------------------
+          Voice Recognition 
+    ------------------------------*/
+
+    // If false, the recording will stop after a few seconds of silence.
+    // When true, the silence period is longer (about 15 seconds),
+    // allowing us to keep recording even when the user pauses. 
+    recognition.continuous = false;
+
+    // This block is called every time the Speech APi captures a line. 
+    recognition.onresult = function (event) {
+
+      // event is a SpeechRecognitionEvent object.
+      // It holds all the lines we have captured so far. 
+      // We only need the current one.
+      var current = event.resultIndex;
+      // console.log(current);
+
+      // Get a transcript of what was said.
+      var transcript = event.results[current][0].transcript;
+
+
+
+      // Add the current transcript to the contents of our Note.
+      // There is a weird bug on mobile, where everything is repeated twice.
+      // There is no official solution so far so we have to handle an edge case.
+      var mobileRepeatBug = (current == 1 && transcript == event.results[0][0].transcript);
+
+      if (!mobileRepeatBug) {
+        noteContent = transcript;
+        console.log(noteContent);
+        const chatMessage = document.querySelector('#chat-textbox');
+        console.log('Hello ', chatMessage);
+        chatMessage.value = noteContent;
+        document.querySelector('#chat-send-button').click();
+      }
+    };
+
+
+
+    /*-----------------------------
+          App buttons and input 
+    ------------------------------*/
+
+    $('#start-record-btn').on('click', function (e) {
+      if (noteContent.length) {
+        noteContent += ' ';
+      }
+      recognition.start();
+    });
+
+
+
+    // Sync the text inside the text area with the noteContent variable.
+    noteTextarea.on('input', function () {
+      noteContent = $(this).val();
+    })
+
+    $('#save-note-btn').on('click', function (e) {
+      recognition.stop();
+
+      if (!noteContent.length) {
+        instructions.text('Could not save empty note. Please add a message to your note.');
+      }
+      else {
+        // Save note to localStorage.
+        // The key is the dateTime with seconds, the value is the content of the note.
+        saveNote(new Date().toLocaleString(), noteContent);
+
+        // Reset variables and update UI.
+        noteContent = '';
+        renderNotes(getAllNotes());
+        noteTextarea.val('');
+        instructions.text('Note saved successfully.');
+      }
+
+    })
+
+
+    notesList.on('click', function (e) {
+      e.preventDefault();
+      var target = $(e.target);
+
+      // Listen to the selected note.
+      if (target.hasClass('listen-note')) {
+        var content = target.closest('.note').find('.content').text();
+        readOutLoud(content);
+      }
+
+      // Delete note.
+      if (target.hasClass('delete-note')) {
+        var dateTime = target.siblings('.date').text();
+        deleteNote(dateTime);
+        target.closest('.note').remove();
+      }
+    });
+
+
+
+    /*-----------------------------
+          Speech Synthesis 
+    ------------------------------*/
+
+    function readOutLoud(message) {
+      var speech = new SpeechSynthesisUtterance();
+
+      // Set the text and voice attributes.
+      speech.text = message;
+      speech.volume = 1;
+      speech.rate = 1;
+      speech.pitch = 1;
+
+      window.speechSynthesis.speak(speech);
+    }
+
+
+
+    /*-----------------------------
+          Helper Functions 
+    ------------------------------*/
+
+    function renderNotes(notes) {
+      var html = '';
+      if (notes.length) {
+        notes.forEach(function (note) {
+          html += `<li class="note">
+        <p class="header">
+          <span class="date">${note.date}</span>
+          <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+          <a href="#" class="delete-note" title="Delete">Delete</a>
+        </p>
+        <p class="content">${note.content}</p>
+      </li>`;
+        });
+      }
+      else {
+        html = '<li><p class="content">You don\'t have any notes yet.</p></li>';
+      }
+      notesList.html(html);
+    }
+
+
+    function saveNote(dateTime, content) {
+      localStorage.setItem('note-' + dateTime, content);
+    }
+
+
+    function getAllNotes() {
+      var notes = [];
+      var key;
+      for (var i = 0; i < localStorage.length; i++) {
+        key = localStorage.key(i);
+        console.log(i)
+        console.log(key)
+
+        if (key.substring(0, 5) == 'note-') {
+          notes.push({
+            date: key.replace('note-', ''),
+            content: localStorage.getItem(localStorage.key(i))
+          });
+        }
+      }
+      console.log(notes)
+      return notes;
+    }
+
+
+    function deleteNote(dateTime) {
+      localStorage.removeItem('note-' + dateTime);
+    }
+  </script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+    $SCRIPT_ROOT = {{ request.script_root | tojson }};
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+  <script>
+    const chatboxButton = document.querySelector("#chatbox-button");
+    const chatMessage = document.querySelector('.chatbox__messages');
+    console.log(chatboxButton);
+    // const msg = 'Hello,how may I help you?';
+
+    window.addEventListener('load', () => {
+      chatboxButton.click();
+      chatMessage.innerHTML += 'Greetings !! '
+      chatMessage.innerHTML += 'Hi, I am ChatBot. You can select your prefered Language above'
+
+      let count = 1;
+
+      const hidFunc = setInterval(() => {
+        const gtrans = document.querySelector('.skiptranslate');
+        const gBox = document.querySelector(".goog-te-gadget");
+        const chatboxHeader = document.querySelector(".chatbox__header");
+        const selectBox = gBox.querySelector('div');
+
+        if (count === 1) {
+          gBox.innerHTML = '';
+          chatboxHeader.append(selectBox);
+        }
+
+        if (gtrans) {
+          gtrans.style.display = 'none';
+          gtrans.style.visibility = 'hidden';
+          document.body.classList.add('white-bar')
+          document.body.style.top = '0';
+          // clearInterval(hidFunc);
+        }
+        // clearInterval(hidFunc);
+
+        count++;
+
+      }, 10)
+
+    })
+  </script>
+
+
+
+
+</body>
+
+</html>
